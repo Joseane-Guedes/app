@@ -5,3 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Definindo estratégias para o body */
+
+body {
+  background: #e6ecf0;
+  font-family: "Helvetica Neue ", "Helvetica", Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility !important;/*  Renderiza a fonte melhor e faz com que a fonte fique com o melhor estilo possivel */
+-webkit-font-smoothing: antialiased !important;
+/* técnica que, basicamente, serve para suavizar bordas gráficas e melhorar a qualidade das imagens como um todo. */
+}
