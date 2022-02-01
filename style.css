@@ -1,0 +1,7 @@
+/* Diego sempre faz isso para todas as paginas que ele decide construir. Da um reset nos elementos para melhorar o desenvolvimento. Serva para não perder a consistência no layout que a gente ta fazendo. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
