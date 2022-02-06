@@ -1,4 +1,6 @@
-/* Diego sempre faz isso para todas as paginas que ele decide construir. Da um reset nos elementos para melhorar o desenvolvimento. Serva para não perder a consistência no layout que a gente ta fazendo. */
+/* Diego sempre faz esse reset  para todas as paginas que ele decide construir. Da um reset nos elementos para melhorar o desenvolvimento. Serve para não perder a consistência no layout. 
+Na criação de layouts, ele também recomenda sempre começar fazendo a estrutura do codigo em html PRIMEIRO, para DEPOIS ir para parte de estilização para  aumentar o aprendizado, entendimento e produtividade!!
+*/
 
 * {
   margin: 0;
@@ -10,8 +12,97 @@
 
 body {
   background: #e6ecf0;
-  font-family: "Helvetica Neue ", "Helvetica", Arial, Helvetica, sans-serif;
-  text-rendering: optimizeLegibility !important;/*  Renderiza a fonte melhor e faz com que a fonte fique com o melhor estilo possivel */
--webkit-font-smoothing: antialiased !important;
-/* técnica que, basicamente, serve para suavizar bordas gráficas e melhorar a qualidade das imagens como um todo. */
+  font-family: "Times New ","Helvetica Neue ", Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility !important;
+  /*  Renderiza a fonte melhor e faz com que a fonte fique com o melhor estilo possivel(menos pixels) */
+  -webkit-font-smoothing: antialiased !important;
+  /* técnica que, basicamente, serve para suavizar bordas gráficas e melhorar a qualidade das imagens como um todo. O anti-aliasing nada mais é do que uma ilusão visual, que faz com que os gráficos pareçam polidos aos olhos do espectador.  */
+}
+
+.content {
+  max-width:1170px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+header#main-header {
+  height: 46px;
+  background: #fff;
+  box-shadow:0 1px 1px rgba(0, 0 ,0 , 0.25);
+}
+
+header#main-header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+header#main-header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header#main-header nav ul li {
+display: flex;
+ align-items: center;
+
+  font-size: 1rem;
+  color: #667580;
+  font-weight: bold;
+
+  margin-left: 30px;
+}
+
+header#main-header nav ul li:first-child {
+  margin: 0;
+}
+
+header#main-header nav ul li img {
+  width: 1rem;
+  height: 1rem;
+  margin-right:  7px;
+} 
+
+header#main-header div.side img {
+  height: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+header#main-header div.side {
+  display: flex;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+header#main-header div.side input{
+  width: 220px ;
+  border: 1px solid #e6ecf0;
+  height: 34px;
+  padding:  0 30px 0 12px;
+  border-radius: 16px;
+  color: #667581;
+  font-size: 12px;
+  background: #f5f8fa url("images/search.svg") no-repeat 190px center ;
+}
+
+header#main-header div.side button {
+  height: 34px;
+  background-color: #3bb9e3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  font-weight: bold;
+  font-size:14px;
+  color: #fff;
+  border:0;
+  border-radius:16px;
 }
